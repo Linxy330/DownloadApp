@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
                 progressDialog = new ProgressDialog(MainActivity.this);
                 progressDialog.setMessage("Downloading " + apkName);
                 progressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
-                progressDialog.setIndeterminate(true);
+                progressDialog.setIndeterminate(false);
                 progressDialog.setCancelable(false);
                 progressDialog.show();
             }
@@ -190,7 +190,7 @@ public class MainActivity extends AppCompatActivity {
             handler.post(new Runnable() {
                 @Override
                 public void run() {
-                    progressDialog.setProgress(finalTotal);
+                    progressDialog.setProgress((int) (finalTotal * 100 / fileLength));
                 }
             });
         }
