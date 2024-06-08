@@ -38,16 +38,21 @@ public class MainActivity extends AppCompatActivity {
             "https://github.com/topjohnwu/Magisk/releases/download/v27.0/Magisk-v27.0.apk",
             //爱玩机工具箱
             "https://dl-tc.coolapkmarket.com/down/apk_upload/2024/0604/111111-192529-o_1hvhho6q014fvdhsenc1jtlpd213-uid-666190.apk?t=1717849992&sign=05caf8b8e221b19a172e550b33b8612e",
-            //clash
-            "https://down.clashcn.com/soft/clashcn.com_cfa-2.5.12-premium-universal-release.apk",
-            "https://example.com/yourapp5.apk"
+            //scene
+            "http://download.omarea.com/scene7/scene_7.2.3.apk",
+            //MT管理器
+            "https://pan.mt2.cn/mt/MT2.15.7.apk",
+            //Momo检测
+            "https://cr10.dapai52.com/io.github.vvb2060.mahoshojo.apk"
+
     };
     private static final String[] APK_NAMES = {
             "app-release.apk",
             "Magisk-v27.0.apk",
             "iWan.apk",
-            "Clash.apk",
-            "yourapp5.apk"
+            "Scene.apk",
+            "MT-manager.apk",
+            "Momo.apk"
     };
 
     private ProgressDialog progressDialog;
@@ -63,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         Button button3 = findViewById(R.id.button3);
         Button button4 = findViewById(R.id.button4);
         Button button5 = findViewById(R.id.button5);
+        Button button6 = findViewById(R.id.button6);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,6 +102,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 downloadAndInstallAPK(APK_URLS[4], APK_NAMES[4]);
+            }
+        });
+
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                downloadAndInstallAPK(APK_URLS[5], APK_NAMES[5]);
             }
         });
     }
