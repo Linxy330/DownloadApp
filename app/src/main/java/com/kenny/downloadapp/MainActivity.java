@@ -31,20 +31,22 @@ import java.net.URL;
 public class MainActivity extends AppCompatActivity {
 
     private static final int PERMISSION_REQUEST_CODE = 1;
-    private static final String MAGISK_URL = "https://github.com/HuskyDG/magisk-files/releases/download/1707294287/app-release.apk";
-    private static final String MAGISK_NAME = "app-release.apk";
     private static final String[] APK_URLS = {
-            MAGISK_URL,
-            "https://example.com/yourapp2.apk",
-            "https://example.com/yourapp3.apk",
-            "https://example.com/yourapp4.apk",
+            //magisk delta
+            "https://github.com/HuskyDG/magisk-files/releases/download/1707294287/app-release.apk",
+            //magisk
+            "https://github.com/topjohnwu/Magisk/releases/download/v27.0/Magisk-v27.0.apk",
+            //爱玩机工具箱
+            "https://dl-tc.coolapkmarket.com/down/apk_upload/2024/0604/111111-192529-o_1hvhho6q014fvdhsenc1jtlpd213-uid-666190.apk?t=1717849992&sign=05caf8b8e221b19a172e550b33b8612e",
+            //clash
+            "https://down.clashcn.com/soft/clashcn.com_cfa-2.5.12-premium-universal-release.apk",
             "https://example.com/yourapp5.apk"
     };
     private static final String[] APK_NAMES = {
-            MAGISK_NAME,
-            "yourapp2.apk",
-            "yourapp3.apk",
-            "yourapp4.apk",
+            "app-release.apk",
+            "Magisk-v27.0.apk",
+            "iWan.apk",
+            "Clash.apk",
             "yourapp5.apk"
     };
 
