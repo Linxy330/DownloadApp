@@ -35,11 +35,11 @@
         android:id="@+id/button5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="下载并安装MT管理器" />
+        android:text="下载并安装 MT管理器" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="下载并安装Momo检测" />
+        android:text="下载并安装 Momo检测" />
 </LinearLayout>
